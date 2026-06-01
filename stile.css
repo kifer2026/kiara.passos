@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f9f4;
+    color:#333;
+}
+
+header{
+    background:#2e7d32;
+    padding:20px 0;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header h1{
+    color:white;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:bold;
+}
+
+.hero{
+    height:80vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+    ),
+    url("https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=1600");
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.hero h2{
+    font-size:3rem;
+}
+
+.hero p{
+    margin:20px 0;
+    font-size:1.2rem;
+}
+
+.hero button{
+    padding:12px 30px;
+    border:none;
+    border-radius:8px;
+    background:#4caf50;
+    color:white;
+    cursor:pointer;
+}
+
+.sobre,
+.servicos,
+.contato,
+.contador{
+    padding:70px 10%;
+    text-align:center;
+}
+
+.cards{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.card{
+    width:300px;
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.contador{
+    background:#2e7d32;
+    color:white;
+}
+
+.numeros{
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    margin-top:30px;
+    flex-wrap:wrap;
+}
+
+.numeros span{
+    font-size:3rem;
+    font-weight:bold;
+}
+
+form{
+    max-width:500px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+}
+
+form input,
+form textarea{
+    margin:10px 0;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+form button{
+    background:#2e7d32;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+    .hero h2{
+        font-size:2rem;
+    }
+
+    .container{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .numeros{
+        flex-direction:column;
+    }
+}
